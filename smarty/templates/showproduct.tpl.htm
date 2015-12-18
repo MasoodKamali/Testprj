@@ -1,0 +1,25 @@
+      <!-- - - - - - - - - - - - - - Start Show Product - - - - - - - - - - - - - - - -->          
+         {section name=id loop=$LstProduct} 
+            <button class="button default">
+                  <ul>
+                      <li><p>{$LstProduct[id][1]}</p></li>                    
+                      <li>قیمت:<label>{$LstProduct[id][3]}</label></li>                      
+                      <li>توضیحات:<label>{$LstProduct[id][2]}</label></li>   
+                  </ul>
+            </button>            
+         {/section}  
+         <form action="index.php" method="post">
+             <div class="border-divider" style="margin: 50px;"> 
+             <input type="hidden" name="recno" value="{$recno}"/> 
+                {if $HideBtnNext!="Yes"}
+                   <button name="btnnext" class="button default" >بعدی</button>  
+                {/if}     
+                {if $HideBtnPerv!="Yes"}
+                   <button name="btnperv" class="button default" >قبلی</button>
+                {/if}                              
+             </div>	
+         </form>         
+    
+   
+     
+     

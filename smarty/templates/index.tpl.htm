@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if IE 7]>					<html class="ie7 no-js" lang="fa">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="fa">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="fa">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="fa">  <!--<![endif]-->
+<head>	
+	<meta charset="utf-8">
+	
+	<title>{if $titel}{$titel}{else}سایت تست{/if}</title>	
+ 
+	<link rel="stylesheet" href="css/skeleton.css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" media="screen" />	
+	
+    <!--[if lt IE 9]>
+    	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
+    <![endif]-->  
+    
+     <!-- JQUERY KENBURN SLIDER  -->	   	
+</head>
+<body class="color-1 h-style-1 text-1">	
+	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
+	<header id="header">		
+		<div class="container">			
+			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->				
+			<a href="index.php" id="logo">
+				<h1>Test</h1>
+			</a><!--/ #logo-->				
+			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->			
+			<div class="clear"></div>
+		</div><!--/ .container-->		
+	</header><!--/ #header-->	
+	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
+	{if $titel!=null}
+     <section class="page-header">		
+	  <div class="container">			
+		<h1>{$titel}</h1>			
+	  </div>		
+	</section>
+    <section class="main container sbr clearfix">        
+      <div class="breadcrumbs">
+		<a title="خانه" href="index.php">خانه</a>
+		<span>{$titel}</span>
+	  </div>
+    {/if}
+    <!--                           شروع tpl-->     
+    {if $show_template=="showproduct"}  
+		{include file="$dir/showproduct.tpl.htm"}                       
+	{else}
+		{include file="$dir/home.tpl.htm"}  
+	{/if}       
+		<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
+	</section>   
+	<footer id="footer">		
+		<div class="container  clearfix">			
+			<div class="four columns">					
+				<div class="widget widget_contacts">					
+					<div class="vcard">
+						<span class="contact street-address">مسعود کمالی</span>						
+						<span class="contact email">ایمیل: masoodkamali0@gmail.com</span>						
+					</div><!--/ .vcard-->					
+				</div><!--/ .widget-->	
+			</div><!--/ .four-->			
+		</div><!--/ .container-->		
+	</footer><!--/ #footer-->	
+	<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->	
+	
+	<!-- - - - - - - - - - - - - Bottom Footer - - - - - - - - - - - - - - -->	
+	
+	<footer id="bottom-footer" class="clearfix">
+		
+		<div class="container">
+			
+			<div class="copyright">Copyright SMKSMK.ir·  ThemeMakers  آ·  All rights reserved</div>
+			
+		</div><!--/ .container-->
+		
+	</footer><!--/ #bottom-footer-->
+	
+	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->
+    <!--[if lt IE 9]>
+	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
+     <![endif]-->     
+    <script src="js/custom.js"></script>
+</body>
+</html>
