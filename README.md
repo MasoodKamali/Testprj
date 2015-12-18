@@ -1,6 +1,3 @@
-#با سلام
-ابتدا از پوشه دیتابیس فایل  
-cap .sql 
-را  در  
-mysql  
-بار گذاری کنید
+#Hi
+First upload cap.sql in folder database in mysql.
+Second:Run index.php
