@@ -1,3 +1,3 @@
 #Hi
-First upload cap.sql in folder database in mysql.
+First upload cap.sql at folder <database> in mysql.
 Second:Run index.php
